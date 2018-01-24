@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24小时提交率统计</title>
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common-wjc/wjcDemo.css">
+    <link rel="stylesheet" type="text/css" href="./css/submission-rate.css">
+
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap/bootstrap-select.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="../../js/common-wjc/wjcDemo.js"></script>
+    <script src="../dailySales-platform-APP/js/echarts.min.js"></script>
+    <script type="text/javascript" src="./js/submission-rate-option.js"></script>
+    <script type="text/javascript" src="./js/submission-rate.js"></script>
+</head>
+
+<body>
+    <div class="submission-rate" id="submissionRate">
+        <div class="submission-header">
+            <span>24小时检测</span>
+        </div>
+        <div class="submission-detail">
+            <div class="date-sel">
+                <span>数据日期</span>
+                <div class="date-control" id="changeT">
+                    <input type="text" id="detailDate" readonly class="detail-date form-control" data-date-format="yyyy-mm-dd">
+                    <span class="add-on down">
+                        <i class="glyphicon glyphicon-triangle-bottom" id="add"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="schedule">
+                <div class="schedule-detail" id="scheduleDetail">
+                    <div>
+                        <span class="">8:00</span>
+                    </div><div>
+                        <span>9:00</span>
+                    </div><div>
+                        <span>10:00</span>
+                    </div><div>
+                        <span>11:00</span>
+                    </div><div>
+                        <span>12:00</span>
+                    </div><div>
+                        <span>13:00</span>
+                    </div><div>
+                        <span>14:00</span>
+                    </div><div>
+                        <span>15:00</span>
+                    </div><div>
+                        <span>16:00</span>
+                    </div><div>
+                        <span>17:00</span>
+                    </div><div>
+                        <span>18:00</span>
+                    </div><div>
+                        <span>19:00</span>
+                    </div><div>
+                        <span>20:00</span>
+                    </div><div>
+                        <span>21:00</span>
+                    </div><div>
+                        <span>22:00</span>
+                    </div><div>
+                        <span>23:00</span>
+                    </div><div>
+                        <span>24:00</span>
+                    </div><div><span></span></div>
+                </div>
+            </div>
+            <div class="team-data">
+                <div class="data-total">
+                    <h6>总计</h6>
+                    <div class="allot-submit-rate" id="allotSubmitRate"></div>
+                    <div class="allot-submit-rate" id="allotSubmitRate1"></div>
+                    <div class="amount">
+                    	<div class="evOne">
+                    		<span>分配量</span><br>
+                    		<span class="num allot" id='allot'></span>
+                    	</div>
+                    	<div class="evOne">
+                    		<span>拨打量</span><br>
+                    		<span class="num dial" id='dial'></span>
+                    	</div>
+                    	<div class="evOne">
+                    		<span>提交件</span><br>
+                    		<span class="num submit" id='submit'></span>
+                    	</div>
+                    </div>
+                </div>
+                <div class="data-detail">
+                    <h6>各团队整点数据对比</h6>
+                    <div class="team-data-sel" id="teamDataSel">
+                        <span>排序规则</span>
+                        <select name="" id="distributeRate" class="select distribute-rate">
+                            <option value="">分配提交率</option>
+                        </select>
+                        <select name="" id="teamOrder" class="team-order">
+                            <option value="">降序</option>
+                        </select>
+                    </div>
+                    <div class="team-contrast-detail" id="teamContrastDetail">
+
+                    </div>
+                </div>
+            </div>
+            <div class="trend-contrast">
+                <div class="trend-title">
+                                                    单指标24小时趋势对比
+                </div>
+                <div class="alternative-condition">
+                    <span>选择指标</span>
+                    <select name="" id="alternative" class="select distribute-rate">
+                        <option value="">分配提交率</option>
+                    </select>
+                    <span class="team-sel">选择您要对比的团队</span>
+                    <select name="" id="teamSel" class="select team-total" multiple>
+                    </select>
+                </div>
+                <div class="trend-contrast-detail" id="trendDetail">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+body {
+    font-family: "MicrosoftYahei";
+    font-size: 12px;
+    color: #333;
+    background-color: #F7F7F8;
+}
+.submission-rate {
+    width: 1114px;
+    margin: auto;
+}
+.submission-rate .submission-header{
+  padding: 10px 0;
+  font-size: 14px;
+}
+.submission-rate .submission-detail{
+    padding: 20px 29px 55px;
+    background: #fff;
+}
+.submission-detail .team-data{
+    height: 750px;
+    clear: both;
+    margin-top: 20px;
+}
+input{
+    outline: none;
+}
+.date-control{
+    display: inline-block;
+    position: relative;
+}
+.date-sel .detail-date {
+    width: 130px;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+.date-control .down{
+	position: absolute;
+    right: 9px;
+    top: 7px;
+    z-index: 100;
+}
+.team-data .data-total{
+    float: left;
+    width: 290px;
+    height: 740px;
+    border: 1px solid #e5e5e5;
+}
+.team-data .data-detail{
+    float: left;
+    width: 735px;
+    height: 740px;
+    margin-left: 30px;
+    border: 1px solid #e5e5e5;
+}
+.submission-detail .schedule{
+    padding-top: 50px;
+    width: 100%;
+    white-space:nowrap; 
+    overflow-x: hidden;
+    /*border-bottom: 2px solid #e5e5e5;*/
+}
+.schedule-detail div{
+    display: inline-block;
+    width: 61px;
+    height: 10px;
+    border-bottom:2px solid #f5f5f5;
+    border-right:2px solid #f5f5f5;
+    position: relative;
+}
+.schedule-detail{
+    margin-left: -22px;
+}
+.schedule-detail span{
+    padding: 3px 8px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    color: #c1c1c1 ;
+    position: absolute;
+    right: -23px;
+    top: -28px;
+    cursor: pointer;
+}
+.schedule-detail div.optional{
+    border-right-color: #1D86F4;
+    border-bottom-color: #1D86F4;
+}
+.schedule-detail div.optional span {
+    background: #e9f2ff;
+    color: #1d86f4;
+}
+.schedule-detail div:last-child span{
+    background: #fff;
+}
+.schedule-detail span.active{
+    background: #1D86F4!important;
+    color:#fff!important;
+}
+.submission-detail .trend-contrast{
+    border: 1px solid #e5e5e5;
+    margin-top: 30px;
+    width: 100%;
+    height:700px;
+    padding:30px 20px 30px;
+}
+.trend-contrast .trend-title{
+    font-size: 16px;
+    color:#000;
+    font-weight: bold;
+}
+.trend-contrast .alternative-condition{
+    margin-top: 20px;
+    color:#666;
+}
+.alternative-condition select{
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 8px;
+    color: #000;
+    outline: none;
+}
+.alternative-condition .distribute-rate{
+    width: 150px;
+}
+.alternative-condition .team-total+div{
+    width: 300px !important;
+}
+.alternative-condition .team-sel{
+    margin-left: 30px;
+}
+.trend-contrast-detail{
+    margin-top: 40px;
+    padding-left: 30px;
+    height: 550px;
+}
+.team-data .data-detail{
+    padding: 20px;
+}
+.team-data .data-detail h6{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.data-detail .team-data-sel{
+    font-size: 14px;
+}
+.team-contrast-detail{
+    height: 600px;
+    margin-top: 30px;
+}
+.team-data-sel select{
+    border: 1px solid #e5e5e5;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 10px;
+    margin-top:10px;
+    color: #000;
+    outline: none;
+}
+.team-data-sel .team-order{
+	width:100px !important;
+}
+.team-data .data-total h6{
+	padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.data-total .allot-submit-rate{
+    height: 300px;
+}
+.data-total .amount{
+	height: 81px;
+	background: #f5f5f5;
+	border-top: 1px solid #e5e5e5;
+}
+.amount .evOne{
+	display: inline-block;
+	width: 32.3%;
+	height: 100%;
+	text-align: center;
+	padding-top: 20px;
+	border-right: 1px solid #e5e5e5;
+}
+.amount .evOne:last-child{
+	border-right:none;
+}
+.evOne span{
+ 	color: #666;	
+}
+.evOne .num{
+	font-size: 16px;
+}
+.allot{
+	color:#6c73fd !important;
+}
+.dial{
+	color:#c573ff !important;
+}
+.submit{
+	color:#17dda7 !important;
+}
+
+.btn-default:hover,
+.btn-default:active{
+    background: #fff;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    background: #fff;
+}
+.selected{
+	background:aliceblue !important;
+}
